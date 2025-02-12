@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/A01Page_ui.dart';
+import 'package:flutter_speed_ui_app/views/B01Page_ui.dart';
 
 class HomeUI extends StatefulWidget {
   const HomeUI({super.key});
@@ -24,7 +26,15 @@ class _HomeUIState extends State<HomeUI> {
               width: MediaQuery.of(context).size.width * 0.7,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                //เปิดหน้าจอแบบย้อยกลับได้
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => A01pageUI(),
+                  ),
+                );
+              },
               child: Text(
                 'Go to A Page',
                 style: TextStyle(
@@ -49,7 +59,15 @@ class _HomeUIState extends State<HomeUI> {
               height: MediaQuery.of(context).size.height * 0.01,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                //เปิดหน้าจอแบบย้อยกลับได้
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => B01pageUI(),
+                  ),
+                );
+              },
               child: Text(
                 'Go to B Page',
                 style: TextStyle(

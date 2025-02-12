@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/A01Page_ui.dart';
+import 'package:flutter_speed_ui_app/views/A02Page_ui.dart';
+import 'package:flutter_speed_ui_app/views/B01Page_ui.dart';
 import 'package:flutter_speed_ui_app/views/Home_ui.dart';
 
 void main() {
@@ -20,7 +23,7 @@ class _flutterSAUState extends State<flutterSAU> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeUI(),
+      home: B01pageUI(),
     );
   }
 }
