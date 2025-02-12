@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/B02Page_ui.dart';
+import 'package:flutter_speed_ui_app/views/B03Page_ui.dart';
 
 class B01pageUI extends StatefulWidget {
   const B01pageUI({super.key});
@@ -60,7 +62,15 @@ class _B01pageUIState extends State<B01pageUI> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      //เปิดหน้าจอแบบย้อยกลับได้
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => B02pageUI(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Login',
                       style: TextStyle(
@@ -85,7 +95,15 @@ class _B01pageUIState extends State<B01pageUI> {
                     width: MediaQuery.of(context).size.width * 0.01,
                   ),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      //เปิดหน้าจอแบบย้อยกลับได้
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => B03pageUI(),
+                        ),
+                      );
+                    },
                     child: Text(
                       'Register',
                       style: TextStyle(
